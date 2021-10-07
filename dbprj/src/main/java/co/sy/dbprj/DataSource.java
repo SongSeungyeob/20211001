@@ -18,7 +18,7 @@ public class DataSource {
 	public Connection conn;	// java에서 DBMS 연결객체
 	
 	public DataSource() {
-		getDbproperties();		// 외부 properties 파일을 읽어서 내부 변수에 담음.
+		getDbproperties();		/// 외부 properties 파일을 읽어서 내부 변수에 담음.
 		try {
 			Class.forName(driver);
 			conn = DriverManager.getConnection(url, user, password);
